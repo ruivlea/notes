@@ -1,0 +1,28 @@
+oasis linux applyperms do. Need to check how secure it is. Is it secure enough?
+
+# ./libexec/applyperms
+chmod("bin/doas", 06755)
+chmod("bin/fusermount3", 04755)
+chmod("bin/passwd", 04755)
+chmod("bin/swc-launch", 04755)
+mkdir("dev", 0755)
+mkdir("etc", 0755)
+mkdir("home", 0755)
+mkdir("lib/python3.10/lib-dynload", 0755)
+mkdir("mnt", 0755)
+mkdir("proc", 0755)
+mkdir("root", 0700)
+mkdir("run", 0755)
+mkdir("share/git-core/templates/branches", 0755)
+mkdir("share/git-core/templates/hooks", 0755)
+mkdir("sys", 0755)
+mkdir("tmp", 0755)
+mkdir("var", 0755)
+mkdir("var/db", 0755)
+mkdir("var/empty", 0755)
+mkdir("var/log", 0755)
+
+for reference:
+---
+on alpine:
+---s--x--x    1 root     root         14200 Apr  4 17:19 /bin/bbsuid

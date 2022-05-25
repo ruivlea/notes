@@ -1,5 +1,5 @@
 oasis linux applyperms do. Need to check how secure it is. Is it secure enough?
-
+```
 # ./libexec/applyperms
 chmod("bin/doas", 06755)
 chmod("bin/fusermount3", 04755)
@@ -21,12 +21,17 @@ mkdir("var", 0755)
 mkdir("var/db", 0755)
 mkdir("var/empty", 0755)
 mkdir("var/log", 0755)
-
+```
 for reference:
 ---
 on alpine:
 ---s--x--x    1 root     root         14200 Apr  4 17:19 /bin/bbsuid
 
 what i try to change:
-`chmod 00755 bin/swc-launch`
+```
+chmod 00755 bin/swc-launch
+```
 then add my user to group `video` if it shows permission denied
+```
+chmod 4111 bin/passwd
+```

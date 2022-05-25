@@ -31,7 +31,12 @@ what i try to change:
 ```
 chmod 00755 bin/swc-launch
 ```
+
 then add my user to group `video` if it shows permission denied
 ```
 chmod 4111 bin/passwd
+```
+
+```
+chmod 4755 bin/doas
 ```

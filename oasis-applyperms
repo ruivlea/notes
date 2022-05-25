@@ -26,3 +26,7 @@ for reference:
 ---
 on alpine:
 ---s--x--x    1 root     root         14200 Apr  4 17:19 /bin/bbsuid
+
+what i try to change:
+`chmod 00755 bin/swc-launch`
+then add my user to group `video` if it shows permission denied
